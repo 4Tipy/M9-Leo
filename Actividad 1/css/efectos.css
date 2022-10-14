@@ -2,7 +2,7 @@
     border: blue 2px solid;
 }
 .bordes{
-    border: greenyellow 2px solid;
+    border: grey 2px solid;
 }
 header{
     border: black 2px solid;
@@ -13,7 +13,8 @@ header p, header h1{
     margin-right: 20px;
 }
 .main{
-    border: red 2px solid;
+    padding: 20px;
+    border: black 2px solid;
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
@@ -23,16 +24,15 @@ header p, header h1{
 }
 .asideIZ{
     width: 200px;
-    border: black 2px solid;
+    border: red 2px solid;
  
 }
 .asideIZ>h2{
     margin: 10px;
-    border: greenyellow 2px solid;
+    border: grey 2px solid;
 }
 .bloqueTop{
     border: orange 2px solid;
-    margin: 20px;
 }
 .bloqueTop h1, .bloqueTop p{
     margin-left: 20px;
@@ -58,10 +58,11 @@ header p, header h1{
     margin-right: 20px; 
 }
 .bloque1 h2, .bloque1 p, .bloque1 img, .bloque1 a{
-    border: greenyellow 2px solid; 
+    border: grey 2px solid; 
 }
 
 .bloqueBot{
+    border: green 2px solid;
     width: 100%;
     display: inline-block;
 }
@@ -74,7 +75,7 @@ footer{
     text-align: right;
 }
 footer p{
-    border: greenyellow 2px solid; 
+    border: grey 2px solid; 
     margin: 0px;
     padding: 15px;
 }
