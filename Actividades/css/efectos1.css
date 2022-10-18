@@ -1,0 +1,82 @@
+.Container{
+    border: blue 2px solid;
+}
+.bordes{
+    border: grey 2px solid;
+}
+header{
+    border: black 2px solid;
+    text-align: center; 
+}
+header p, header h1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main{
+    padding: 20px;
+    border: black 2px solid;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.bloqueGeneral{
+    width: 100%;
+}
+.asideIZ{
+    width: 200px;
+    border: red 2px solid;
+ 
+}
+.asideIZ>h2{
+    margin: 10px;
+    border: grey 2px solid;
+}
+.bloqueTop{
+    border: orange 2px solid;
+}
+.bloqueTop h1, .bloqueTop p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bloqueMid{
+    display: flex;
+    border: orchid 2px solid;
+}
+.bloqueMidMid{
+
+    display: flex;
+    margin: 20px;
+    border: blue 2px solid;
+}
+.bloqueMidMid>div{
+    text-align: center;
+    border: black 2px solid;
+    margin: 10px;
+}
+.bloqueMidMid h2, .bloqueMidMid p{
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+.bloque1 h2, .bloque1 p, .bloque1 img, .bloque1 a{
+    border: grey 2px solid; 
+}
+
+.bloqueBot{
+    border: green 2px solid;
+    width: 100%;
+    display: inline-block;
+}
+.bloqueBot img{
+    height: 300px;
+    width: 100%;
+}
+footer{
+    background-color:aqua ;
+    text-align: right;
+}
+footer p{
+    border: grey 2px solid; 
+    margin: 0px;
+    padding: 15px;
+}
+
