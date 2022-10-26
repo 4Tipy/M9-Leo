@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 header{
 position: sticky;
 top: 0;
@@ -5,15 +9,15 @@ background-color: grey;
 height: 50px;
 line-height: 50px;
 }
+.Aa a:hover{
+    background-color: blueviolet;
+}
 .Aa a{
     color: white;
     float: right;
     font-size: 22px;
     padding-right: 10px;
     padding-left: 10px;
-}
-.Aa a:hover{
-    background-color: blueviolet;
 }
 .section1{
     width: 100%;
@@ -23,7 +27,7 @@ line-height: 50px;
 }
 .divSection1{
     position: absolute;
-    top:35%;
+    top:38%;
     left: 10%;
 }
 #Psection{
@@ -33,7 +37,7 @@ line-height: 50px;
 }
 
 .section1 img{
-    height: 700px;
+    height: 850px;
     max-height: 100%;
     width: 100%;
 }
@@ -41,18 +45,42 @@ line-height: 50px;
     margin-left: 200px;
     margin-right: 200px;
 }
-.section2 img{
+.divFloat1 img{
     float: left;
     height: 300px;
     width: 450px;
 }
+.divFloat2 img{
+    float: right;
+    height: 300px;
+    width: 450px;
+}
 .divFloat1 p{
+    float: left;
     margin-top: 110px;
     width: 400px;
-    float: left;
+    margin-left: 50px;
+}
+.divFloat2 p{
+   float: right;
+   margin-top: 110px;
+   width: 400px;
+   margin-right: 50px;
 }
 .clearfix{
     clear: both;
 }
+.Carta{
+
+}
+.divCarta1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 4fr 4fr 4fr;
+}
+.grid1{
+    
+}
+
 
 
