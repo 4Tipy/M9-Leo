@@ -189,7 +189,7 @@ header{
 }
 .galDiv img{
     width: 250px;
-    padding: 15px;
+    padding: 10px;
 }
 .Gimg1:hover,.Gimg4:hover, .Gimg5:hover, .Gimg8:hover {
     filter: brightness(50%);
@@ -199,16 +199,22 @@ header{
 
 footer{
     background-color: grey;
-}
+    width: 100%;
+    height: 30px;
 
-.contactos img{
-    padding-left: 15px;
-    padding-right: 5px;
+   
 }
-#nomRest a{
-   text-align: right;
+.contactos img, .contactos a{
+padding-right: 0.5%;
 }
-
+.contactos{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+#nomRest{
+   padding-left: 1200px;
+}
 
 
 
