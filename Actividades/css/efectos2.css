@@ -22,9 +22,28 @@ header{
     padding-right: 10px;
     padding-left: 10px;
 }
+@media only screen and (max-width: 768px) {
+    header{
+        position: sticky;
+        top: 0;
+        background-color: blue;
+        height: 50px;
+        line-height: 50px;
+        z-index: 1;
+    }
+    .efectosHeader a{
+        color: white;
+        float: left;
+        font-size: 22px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
 .efectosHeader a:hover{
     background-color: rgb(165, 68, 23);
 }
+
+
 /*primer section*/
 
 .section1{
@@ -51,6 +70,33 @@ header{
     font-size: 35px;
     margin-bottom: 0px;
 
+}
+@media only screen and (max-width: 768px){
+    .section1{
+        width: 100%;
+        font-size: 20px;
+        position: relative;
+        color: white;
+       
+    }
+    .divSection1{
+        position: absolute;
+        top:46%;
+        left: 10%;
+    }
+    .section1 img{
+        height: 400px;
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    #Psection{
+        color: white;
+        font-size: 35px;
+        margin-bottom: 0px;
+    
+    }
 }
 
 /*segundo section */
