@@ -2,6 +2,11 @@
     padding: 0px;
     margin: 0px;
 }
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
 .clearfix{
     clear:both;
 }
@@ -24,19 +29,10 @@ header{
 }
 @media only screen and (max-width: 768px) {
     header{
-        position: sticky;
-        top: 0;
         background-color: blue;
-        height: 50px;
-        line-height: 50px;
-        z-index: 1;
     }
     .efectosHeader a{
-        color: white;
         float: left;
-        font-size: 22px;
-        padding-right: 10px;
-        padding-left: 10px;
     }
 }
 .efectosHeader a:hover{
@@ -72,30 +68,14 @@ header{
 
 }
 @media only screen and (max-width: 768px){
-    .section1{
-        width: 100%;
-        font-size: 20px;
-        position: relative;
-        color: white;
-       
-    }
-    .divSection1{
-        position: absolute;
-        top:46%;
-        left: 10%;
-    }
     .section1 img{
-        height: 400px;
-        max-height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: 1;
+        height: 200px;
+        width: 768px;
     }
     #Psection{
         color: white;
         font-size: 35px;
-        margin-bottom: 0px;
-    
+        margin-bottom: 0px;    
     }
 }
 
@@ -103,10 +83,9 @@ header{
 
 .section2{
     margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 200px;             /*width 70%*/
+    margin-right: 200px;            /* margin:auto*/                    
     min-width: 70%;
-
 }
 .divFloat1 h1{
     margin-bottom: 20px;
@@ -138,6 +117,46 @@ header{
     float: right;
     margin-top: 8%;
     margin-bottom: 8.5%;
+}
+@media only screen and (max-width: 768px){
+    .section2{
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .divFloat1 h1{
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .divFloat1 p{
+        width: 63.8%;
+        float: left;
+        margin-top: 8%;
+        margin-bottom: 8.5%;
+        margin-left: 4%;
+    }
+    .divFloat1 img{
+        height: 350px;
+        width: 450px;
+        float: left;
+        margin-right: 1%;
+    }
+    .divFloat2{
+        margin-top: 20px;
+    }
+    .divFloat2 img{
+        height: 250px;
+        width: 350px;
+        margin-left: 1%;
+        float: left;
+    }
+    .divFloat2 p{
+        width: 63.8%;
+        float: left;
+        margin-top: 8%;
+        margin-bottom: 8.5%;
+        margin-left: 4%;
+    }   
 }
 
 /* Section Carta */
@@ -219,6 +238,14 @@ header{
     grid-column: 3;
     grid-row: 2;    
 }
+@media only screen and (max-width: 768px){
+    .Carta{
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
 
 /* Galeria de imagenes */
 
@@ -260,6 +287,13 @@ padding-right: 0.5%;
 }
 #nomRest{
    padding-left: 1200px;
+}
+@media only screen and (max-width: 768px){
+    .GaleriaImg{
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }  
 }
 
 
