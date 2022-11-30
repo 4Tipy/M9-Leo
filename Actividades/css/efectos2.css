@@ -75,11 +75,6 @@ header{
         height: 250px;
         width: 768px;
     }
-    #Psection{
-        color: white;
-        font-size: 35px;
-        margin-bottom: 0px;    
-    }
     .divSection1{
         top: 15%;
     }
@@ -90,8 +85,8 @@ header{
 
 .section2{
     margin-top: 20px;
-    margin-left: 200px;             /*width 70%*/
-    margin-right: 200px;            /* margin:auto*/                    
+    margin-left: 200px;             
+    margin-right: 200px;                              
     min-width: 70%;
 }
 .divFloat1 h1{
@@ -137,7 +132,6 @@ header{
     }
     .divFloat1 p{
         width: 110%;
-        float: left;
         margin-top: 2%;
         margin-bottom: 4%;
         margin-left: 4%;
@@ -146,8 +140,6 @@ header{
         margin-top: 15px;
         height: 400px;
         width: 600px;
-        float: left;
-        margin-right: 1%;
         border-radius: 10px;
     }
     .divFloat2{
@@ -250,35 +242,104 @@ header{
 }
 @media only screen and (max-width: 768px){
     .Carta{
-        margin-top: 20px;
         margin-left: 80px;
         margin-right: 80px;
     }
     .divCarta1{
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr; 
+        position: relative;
         grid-template-rows: 45% auto auto;
     }
     .grid1{
-        grid-column: 1;
+        grid-column: 1/2;
         grid-row: 1/4;  
     }
     .grid3{
         grid-column: 2/4;
         grid-row: 2;
+        margin: 10px;
+        border: grey 1px solid;
     }
     .grid4{
         grid-column: 2/4;
-        grid-row: 3;    
+        grid-row: 3;  
+        margin: 10px;
+        border: grey 1px solid;
     }
     .grid3 img, .grid4 img, .grid7 img , .grid8 img{
         height: 100%;
         width: 100%;
+        display: block;
     }
-    
+    .divCarta2{
+        margin-top: 150px;
+        grid-template-rows: 45% auto auto;
+    }
+    .grid5{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    .grid7{
+        grid-column: 2/4;
+        grid-row: 2;
+        margin: 10px;
+        border: grey 1px solid;
+    }
+    .grid8{
+        grid-column: 2/4;
+        grid-row: 3;
+        margin: 10px;
+        border: grey 1px solid; 
+    }
+    .superTexto1{
+        position: absolute; 
+        top: 782px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 75%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto2{
+        position: absolute; 
+        top: 522px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 75%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto3{
+        position: relative; 
+        bottom: 30px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 98%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto4{
+        position: relative; 
+        bottom: 30px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 98%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
 
 }
-
 
 /* Galeria de imagenes */
 
@@ -300,14 +361,25 @@ header{
 .Gimg1:hover,.Gimg4:hover, .Gimg5:hover, .Gimg8:hover {
     filter: brightness(50%);
 }
+@media only screen and (max-width: 768px){
+    .GaleriaImg{
+        margin-top: 200px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .galDiv{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
 
 /* Footer */
 
 footer{
     background-color: grey;
     width: 100%;
-    height: 30px;
-   
+    height: 30px;   
 }
 .contactos img, .contactos a{
 padding-right: 0.5%;
