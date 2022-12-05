@@ -451,6 +451,7 @@ header{
     }
 }
 
+
 /* Galeria de imagenes */
 
 .GaleriaImg{
@@ -520,11 +521,28 @@ footer{
    padding-left: 1200px;
 }
 @media only screen and (max-width: 768px){
-    .contactos img, .contactos a{
-        padding-right: 0%;
-        }
+    footer{
+        background-color: black;
+    }
+    .contactos{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .contactos > div{
+        display: flex;
+    }
+    .contactos a, #nomRest{
+       color: #ddd;
+    }
     #nomRest{
         padding-left: 0px;
+        margin-left: 20%;
+    }
+    .contactos img, .contactos a{
+        padding-right: 2px;
+    }
+    .cont2{
+        margin-left: 20%;
     }
 
 @media only screen and (max-width: 576px){
