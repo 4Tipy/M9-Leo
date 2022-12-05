@@ -1,0 +1,569 @@
+﻿*{
+    padding: 0px;
+    margin: 0px;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .container{
+        width: 100%;
+    }
+}
+.clearfix{
+    clear:both;
+}
+/* Aqui empieza el header */
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: grey;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1;
+}
+.efectosHeader a{
+    color: white;
+    float: right;
+    font-size: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+    header{
+        background-color: blue;
+    }
+    .efectosHeader a{
+        float: left;
+    }
+}
+@media only screen and (max-width: 576px){
+    header{
+        background-color: green; 
+    }
+    .efectosHeader a:hover{
+    background-color: rgb(165, 68, 23);
+    }
+}
+
+/*primer section*/
+
+.section1{
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    color: white;
+   
+}
+.divSection1{
+    position: absolute;
+    top:46%;
+    left: 10%;
+}
+.section1 img{
+    height: 850px;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+#Psection{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 0px;
+
+}
+@media only screen and (max-width: 768px){
+    .section1{
+        font-size: 15px;
+    }
+    .section1 img{
+        height: 250px;
+        width: 768px;
+    }
+    .divSection1{
+        top: 15%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .section1 img{
+        width: 100%;
+    }
+}
+
+/*segundo section */
+
+.section2{
+    margin-top: 20px;
+    margin-left: 200px;             
+    margin-right: 200px;                              
+    min-width: 70%;
+}
+.divFloat1 h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.divFloat1 img{
+    height: 250px;
+    width: 350px;
+    float: left;
+    margin-right: 1%;
+}
+.divFloat1 p{
+    width: 63.8%;
+    float: left;
+    margin-top: 8%;
+    margin-bottom: 8.5%;
+}
+.divFloat2{
+    margin-top: 20px;
+}
+.divFloat2 img{
+    height: 250px;
+    width: 350px;
+    margin-left: 1%;
+    float: right;
+}
+.divFloat2 p{
+    width: 63.8%;
+    float: right;
+    margin-top: 8%;
+    margin-bottom: 8.5%;
+}
+@media only screen and (max-width: 768px){
+    .section2{
+        margin-left: 90px;
+
+    }
+    .section2 h1{
+        font-size: 35px;
+        width: 70%;
+        margin:auto;
+    }
+    .divFloat1 p{
+        width: 110%;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-left: 4%;
+    }
+    .divFloat1 img{
+        margin-top: 15px;
+        height: 400px;
+        width: 600px;
+        border-radius: 10px;
+    }
+    .divFloat2{
+        margin-top: 1px;
+    }
+    .divFloat2 img{
+        height: 400px;
+        width: 600px;
+        margin-left: 0%;
+        float: left;
+        border-radius: 10px;
+    }
+    .divFloat2 p{
+        width: 110%;
+        float: left;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-left: 4%;
+    }   
+}
+@media only screen and (max-width: 576px){
+    .section2{
+        margin-left: 5%;
+    }
+    .section2 h1{
+        width: 130%;
+        text-align: center;
+    }
+    .divFloat1 p{
+        width: 535px;
+        margin: 0px;
+    }
+    .divFloat1 img{
+        width: 130%;
+    }
+    .divFloat2 img{
+        width: 130%;
+    }
+    .divFloat2 p{
+        width: 130%;
+        margin: 0px;
+    }   
+}
+
+/* Section Carta */
+
+.Carta{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.letraSize{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.Lcarta{
+    color: white;
+    background-color: rgb(9, 9, 95);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.divCarta1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 4fr 4fr;
+}
+.grid1{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    grid-column: 1;
+    grid-row: 1/3;
+    border: grey 2px solid;
+}
+.grid2{
+    text-align: left    ;
+    grid-column: 2/4;
+    grid-row: 1;
+    margin: 20px;
+}
+.grid3{
+    grid-column: 2;
+    grid-row: 2/3;
+    margin-left: 20px;
+}
+.grid4{
+    grid-column: 3;
+    grid-row: 2;    
+}
+.grid3 img, .grid4 img, .grid7 img , .grid8 img{
+    height: 225px;
+    width: 80%;
+}
+.divCarta2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 4fr 4fr
+}
+.grid5{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    grid-column: 1;
+    grid-row: 1/3;
+    border: grey 2px solid;
+}
+.grid6{
+    text-align: left    ;
+    grid-column: 2/4;
+    grid-row: 1;
+    margin: 20px;
+}
+.grid7{
+    grid-column: 2;
+    grid-row: 2/3;
+    margin-left: 20px;
+}
+.grid8{
+    grid-column: 3;
+    grid-row: 2;    
+}
+@media only screen and (max-width: 768px){
+    .Carta{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .divCarta1{
+        position: relative;
+        grid-template-rows: 45% auto auto;
+    }
+    .grid1{
+        grid-column: 1/2;
+        grid-row: 1/4;  
+    }
+    .grid3{
+        grid-column: 2/4;
+        grid-row: 2;
+        margin: 10px;
+        border: grey 1px solid;
+    }
+    .grid4{
+        grid-column: 2/4;
+        grid-row: 3;  
+        margin: 10px;
+        border: grey 1px solid;
+    }
+    .grid3 img, .grid4 img, .grid7 img , .grid8 img{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .divCarta2{
+        margin-top: 150px;
+        grid-template-rows: 45% auto auto;
+    }
+    .grid5{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    .grid7{
+        grid-column: 2/4;
+        grid-row: 2;
+        margin: 10px;
+        border: grey 1px solid;
+    }
+    .grid8{
+        grid-column: 2/4;
+        grid-row: 3;
+        margin: 10px;
+        border: grey 1px solid; 
+    }
+    .superTexto1{
+        position: absolute; 
+        top: 782px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 75%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto2{
+        position: absolute; 
+        top: 522px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 75%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto3{
+        position: relative; 
+        bottom: 30px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 98%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .superTexto4{
+        position: relative; 
+        bottom: 30px; 
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 98%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 576px){
+    .Carta{
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .Lcarta{
+        width: 93%;
+    }
+    .divCarta1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 4fr 4fr;
+    }
+    .grid1{
+        grid-column: 1;
+        grid-row: 1;  
+    }
+    .grid2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .grid3{
+        grid-column: 1;
+        grid-row: 3;
+        margin: 10px;
+        border: grey 1px solid;
+    }
+    .grid4{
+        grid-column: 1;
+        grid-row: 4;  
+    }
+    .divCarta2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 4fr 4fr;
+    }
+    .grid5{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid6{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .grid7{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .grid8{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .superTexto2{
+        top: 430px;
+        width: 87%;
+        font-size: 20px;
+        padding: 25px;
+    }
+    .superTexto1{
+        top: 725px;
+        width: 87%;
+        padding: 25px;
+    }
+    .superTexto3{
+        bottom: 72px; 
+        width: 90.8%;
+        padding: 25px;
+    }
+    .superTexto4{
+        bottom: 70px; 
+        width: 90.8%;
+        padding: 25px;
+    }
+}
+
+
+/* Galeria de imagenes */
+
+.GaleriaImg{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.galDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.galDiv img{
+    width: 250px;
+    padding: 10px;
+}
+.Gimg1:hover,.Gimg4:hover, .Gimg5:hover, .Gimg8:hover {
+    filter: brightness(50%);
+}
+@media only screen and (max-width: 768px){
+    .GaleriaImg{
+        margin-top: 200px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .galDiv img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .galDiv{
+        text-align: center;
+        margin: 0px;
+    }
+    .GaleriaImg{
+        width: 100%;
+        margin-top: 60px;
+        margin: 0px;
+        text-align: center;
+    }
+    .galDiv img{
+        width: 90%;
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+/* Footer */
+
+footer{
+    background-color: grey;
+    width: 100%;
+    height: 30px;   
+}
+.contactos img, .contactos a{
+    padding-right: 0.5%;
+}
+.contactos{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+#nomRest{
+   padding-left: 1200px;
+}
+@media only screen and (max-width: 768px){
+    footer{
+        background-color: black;
+    }
+    .contactos{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .contactos > div{
+        display: flex;
+    }
+    .contactos a, #nomRest{
+       color: #ddd;
+    }
+    #nomRest{
+        padding-left: 0px;
+        margin-left: 20%;
+    }
+    .contactos img, .contactos a{
+        padding-right: 2px;
+    }
+    .cont2{
+        margin-left: 20%;
+    }
+
+@media only screen and (max-width: 576px){
+    footer{
+        margin-top: 50px;
+    }
+     #nomRest{
+            display: none;
+    }
+    }
+    .cont1{
+        margin-left: 40px;
+        align-items: center;
+    }
+    .cont2{
+        align-items: center;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
